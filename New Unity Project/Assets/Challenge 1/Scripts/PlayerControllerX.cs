@@ -7,7 +7,7 @@ public class PlayerControllerX : MonoBehaviour
     public float speed;
     public float rotationSpeed;
     public float verticalInput;
-    public Vector3 offset = new Vector3(240,4,2);
+   
     
    
     // Start is called before the first frame update
