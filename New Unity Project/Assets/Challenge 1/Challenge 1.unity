@@ -533,7 +533,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 30
+  field of view: 16.641464
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -559,8 +559,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 240.3, y: 4.5, z: 2.5}
-  m_LocalScale: {x: 0.19122842, y: 0.17358196, z: 0.3194526}
+  m_LocalPosition: {x: 210, y: 5, z: 5}
+  m_LocalScale: {x: 0.0764971, y: 0.06943799, z: 0.052559007}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -578,7 +578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plane: {fileID: 825415029}
-  offset: {x: 0, y: 0, z: 0}
+  offset: {x: 200, y: 0, z: 0}
 --- !u!1 &673814960
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,7 +838,6 @@ MonoBehaviour:
   speed: 15
   rotationSpeed: 100
   verticalInput: 0
-  offset: {x: 228, y: 4, z: 2}
 --- !u!1 &899755176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,11 +1081,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.3156
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.5499
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1122,15 +1121,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.0576125
+      value: 0.9474728
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.0576125
+      value: 0.9474728
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.0576125
+      value: 0.9474728
       objectReference: {fileID: 0}
     - target: {fileID: 5591832540053748219, guid: af29f0ea7e5403641b3b244ede69c374,
         type: 3}
