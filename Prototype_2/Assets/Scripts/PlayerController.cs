@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float speed = 20.0f;
     public float xRange = 28.0f;
-    public GameObject ProjectileFood;
+    public GameObject projectileFood;
 
     // Start is called before the first frame update
     void Start()
@@ -35,10 +35,11 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
 
+        //Space bar launches projectile
         if(Input.GetKeyDown(KeyCode.Space))
         {
             //Launch a projectile from the player
-            Instantiate(ProjectileFood,transform.position,ProjectileFood.transform.rotation);
+            Instantiate(projectileFood,transform.position,projectileFood.transform.rotation);
         }
     }
 }
