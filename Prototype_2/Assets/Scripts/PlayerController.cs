@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float horizontalInput;
     public float speed = 20.0f;
-    public float xRange = 28.0f;
+    public float xRange = 22.0f;
     public GameObject projectileFood;
 
     // Start is called before the first frame update
@@ -25,12 +25,12 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
 
         //Places a boundary on the left
-        if (transform.position.x < -xRange)
+        if (transform.position.x > xRange)
         {
             transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
         }
         //Places a boundary to the right
-        if (transform.position.x > xRange)
+        if (transform.position.x < -xRange)
         {
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
