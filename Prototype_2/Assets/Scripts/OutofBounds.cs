@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class OutofBounds : MonoBehaviour
 {
-    public float topBounds = 20.0f;
-    public float lowerBounds = -15.0f;
+    public float topBounds = 40.0f;
+    public float lowerBounds = -10.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 0;
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
