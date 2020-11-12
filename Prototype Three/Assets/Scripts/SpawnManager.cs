@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    public GameObject obstaclePrefab;
+    public GameObject Obstacle;
     private Vector3 spawnPos = new Vector3(25, 0, 0);
 
     private float startDelay = 2;
@@ -24,7 +24,7 @@ public class SpawnManager : MonoBehaviour
         // Stop obstacle spawning on gameOVer
         if (playerControllerScript.gameOver == false);
         {
-            Instantiate(obstaclePrefab, spawnPos, obstaclePrefab.transform.rotation);
+            Instantiate(Obstacle, spawnPos, Obstacle.transform.rotation);
         }
        
     }
