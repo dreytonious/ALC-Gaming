@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // pressing space key makes player jump
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver)
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
@@ -38,27 +39,32 @@ public class PlayerController : MonoBehaviour
             playerAnim.SetTrigger("Jump_trig");
             dirtParticle.Stop();
             playerAudio.PlayOneShot(jumpSound, 1.0f);
-            Debug.Log("jumping");
+            
         }
     }
-    private void OncollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
-  
+        
+        // runs script if in contact with Ground
         if (collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
             dirtParticle.Play();
-            Debug.Log("On Ground");
+            
         }
+        // runs code if in contact with Obstacle
         else if (collision.gameObject.CompareTag("Obstacle")) 
         {
-            Debug.Log("Game Over");
             gameOver = true;
+            Debug.Log("Game Over");
             playerAnim.SetBool("Death_b", true);
-            playerAnim.SetInteger("DeathType" , 1);
+            playerAnim.SetInteger("DeathType_int" , 1);
             explosionParticle.Play();
             dirtParticle.Stop();
+            playerAudio.PlayOneShot(crashSound, 1.0f);
+           
         }
+      
     }
   
 }
